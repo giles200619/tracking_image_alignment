@@ -4,6 +4,8 @@
 |:---:|:---:|
 |  Template  | Tracking result |
 
+A simple imeplementation of object tracking using inverse compositional image alignment.
+
 ## Dependencies
 * Numpy
 * matplotlib
