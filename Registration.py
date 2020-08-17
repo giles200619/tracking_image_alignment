@@ -1,12 +1,9 @@
 import cv2
 import numpy as np
-import scipy.io as sio
 import matplotlib.pyplot as plt
 from sklearn.neighbors import NearestNeighbors
-from scipy import interpolate
 import random
 import math
-from scipy.interpolate import interpn
 
 
 def find_match(img1, img2):
@@ -398,6 +395,7 @@ if __name__ == '__main__':
 
     A_list,errors_1 = track_multi_frames(template, target_list)
     visualize_track_multi_frames(template, target_list, A_list)
+    
     new_A = np.copy(A_list)
     for i in range(len(new_A)):
         new_A[i][0][0] = (new_A[i][0][0]+new_A[i][1][1])/2
